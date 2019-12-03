@@ -47,10 +47,11 @@ const person = {
 }
 
 function makePersonObject(id, name, email) {
-  Object.create(person);
-  person.id = id;
-  person.name = name;
-  person.email = email;
+  const newPerson = Object.create(person); 
+  newPerson.id = id;
+  newPerson.name = name;
+  newPerson.email = email;
+  return newPerson;
 }
 
 /**
@@ -66,6 +67,7 @@ function makePersonObject(id, name, email) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
+
 function getName(/* code here */) {
   /* code here */
 }
