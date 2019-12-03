@@ -68,8 +68,8 @@ function makePersonObject(id, name, email) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 
-function getName(/* code here */) {
-  /* code here */
+function getName(person) {
+  return "Hello, my name is " + person.name;
 }
 
 /**
