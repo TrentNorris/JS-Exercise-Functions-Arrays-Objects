@@ -268,9 +268,14 @@ function getOlderCars(inventory, maxYear) {
  * in the same order as they appear in the original inventory.
 */
 function getGermanCars(inventory) {
+  var germanCars = [];
   for(let i = 0; i < inventory.length - 1; i++) {
-     
+      var car_make_value = inventory[i].car_make;
+     if(car_make_value == 'BWM' || car_make_value == 'Audi' || car_make_value == 'Volkswagen' || car_make_value == 'Mercedes-Benz') {
+        germanCars.push(inventory[i]);
+     }
   }
+  return germanCars;
   
 }
 
