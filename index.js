@@ -40,7 +40,11 @@ function addNumbers(num1, num2) {
  * }
 */
 
-const person = {}
+const person = {
+  id: 0,
+  name: "",
+  email: ""
+}
 
 function makePersonObject(id, name, email) {
   Object.create(person);
